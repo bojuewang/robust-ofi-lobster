@@ -1,0 +1,52 @@
+name: Repo smoke test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f CITATION.cff
+          test -f requirements.txt
+          test -f docs/PIPELINE.md
+          test -f docs/PROJECT_STRUCTURE.md
+          test -f docs/RESULTS.md
+          test -f reports/final/robust_ofi_final_summary.md
+          test -f reports/final/final_ablation_table.csv
+
+      - name: Check scripts are present
+        run: |
+          test -d scripts/pipeline
+          test -f scripts/run_pipeline_to_step06.sh
+          test -f scripts/dev/check_git_safety.sh
+          find scripts/pipeline -maxdepth 1 -name 'step*.sh' | sort
+
+      - name: Python syntax check
+        run: |
+          python -m compileall src/lobster_ofi
+
+      - name: Data-safety check
+        run: |
+          bash scripts/dev/check_git_safety.sh
