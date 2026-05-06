@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "README.md_exists",
+      "status": "PASS",
+      "observed": "README.md",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "LICENSE_exists",
+      "status": "PASS",
+      "observed": "LICENSE",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "CITATION.cff_exists",
+      "status": "PASS",
+      "observed": "CITATION.cff",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "requirements.txt_exists",
+      "status": "PASS",
+      "observed": "requirements.txt",
+      "expected": "nonempty file"
+    },
+    {
+      "check": ".gitignore_exists",
+      "status": "PASS",
+      "observed": ".gitignore",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "docs/reproducibility_manifest.md_exists",
+      "status": "PASS",
+      "observed": "docs/reproducibility_manifest.md",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "reports/final/robust_ofi_final_summary.md_exists",
+      "status": "PASS",
+      "observed": "reports/final/robust_ofi_final_summary.md",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "reports/final/final_ablation_table.csv_exists",
+      "status": "PASS",
+      "observed": "reports/final/final_ablation_table.csv",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "scripts/run_pipeline_to_step06.sh_exists",
+      "status": "PASS",
+      "observed": "scripts/run_pipeline_to_step06.sh",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "scripts/dev/check_git_safety.sh_exists",
+      "status": "PASS",
+      "observed": "scripts/dev/check_git_safety.sh",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "pipeline_scripts_present",
+      "status": "PASS",
+      "observed": "8",
+      "expected": ">=5"
+    },
+    {
+      "check": "raw_zip_ignored",
+      "status": "PASS",
+      "observed": "ignored",
+      "expected": "ignored"
+    },
+    {
+      "check": "processed_npz_ignored",
+      "status": "PASS",
+      "observed": "ignored",
+      "expected": "ignored"
+    },
+    {
+      "check": "no_large_nondata_files_over_25MB",
+      "status": "PASS",
+      "observed": "none",
+      "expected": "none"
+    },
+    {
+      "check": "git_initialized",
+      "status": "PASS",
+      "observed": ".git exists",
+      "expected": ".git exists"
+    }
+  ]
+}

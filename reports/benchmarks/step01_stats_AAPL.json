@@ -1,0 +1,40 @@
+{
+  "ticker": "AAPL",
+  "zip_path": "data/raw/LOBSTER_SampleFile_AAPL_2012-06-21_10.zip",
+  "message_member": "AAPL_2012-06-21_34200000_57600000_message_10.csv",
+  "orderbook_member": "AAPL_2012-06-21_34200000_57600000_orderbook_10.csv",
+  "message_rows": 400391,
+  "orderbook_rows": null,
+  "first_timestamp": 34200.004241176,
+  "last_timestamp": 57599.913117637,
+  "clean_message_rows": 400391,
+  "event_bins": 34800,
+  "carry_forward_bins": 12000,
+  "event_type_counts": {
+    "1": 191015,
+    "2": 3260,
+    "3": 171126,
+    "4": 23658,
+    "5": 11332
+  },
+  "event_family_counts": {
+    "can": 174386,
+    "exe": 34990,
+    "sub": 191015
+  },
+  "volume_by_family": {
+    "can": 15494937.0,
+    "exe": 2850140.0,
+    "sub": 17185977.0
+  },
+  "orderbook_sample_audit": {
+    "sample_rows": 500,
+    "sample_columns": 40,
+    "ask1_min": 585.39,
+    "bid1_min": 585.3,
+    "spread_min": 0.009999999999990905,
+    "spread_median": 0.1999999999999318,
+    "positive_best_sizes": true
+  },
+  "event_summary_path": "data/interim/event_summary_AAPL.csv"
+}

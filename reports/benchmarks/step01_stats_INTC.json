@@ -1,0 +1,40 @@
+{
+  "ticker": "INTC",
+  "zip_path": "data/raw/LOBSTER_SampleFile_INTC_2012-06-21_10.zip",
+  "message_member": "INTC_2012-06-21_34200000_57600000_message_10.csv",
+  "orderbook_member": "INTC_2012-06-21_34200000_57600000_orderbook_10.csv",
+  "message_rows": 624040,
+  "orderbook_rows": null,
+  "first_timestamp": 34200.005742728,
+  "last_timestamp": 57599.948441634,
+  "clean_message_rows": 624040,
+  "event_bins": 36086,
+  "carry_forward_bins": 10714,
+  "event_type_counts": {
+    "1": 304790,
+    "2": 8028,
+    "3": 278739,
+    "4": 28924,
+    "5": 3559
+  },
+  "event_family_counts": {
+    "can": 286767,
+    "exe": 32483,
+    "sub": 304790
+  },
+  "volume_by_family": {
+    "can": 137787556.0,
+    "exe": 10471645.0,
+    "sub": 149004041.0
+  },
+  "orderbook_sample_audit": {
+    "sample_rows": 500,
+    "sample_columns": 40,
+    "ask1_min": 27.52,
+    "bid1_min": 27.5,
+    "spread_min": 0.00999999999999801,
+    "spread_median": 0.010000000000001563,
+    "positive_best_sizes": true
+  },
+  "event_summary_path": "data/interim/event_summary_INTC.csv"
+}

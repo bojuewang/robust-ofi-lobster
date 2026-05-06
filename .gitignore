@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Raw/proprietary or large LOBSTER data
+data/raw/*.zip
+data/raw/*.csv
+data/interim/*.csv
+data/processed/*.npz
+
+# Keep lightweight summary outputs
+!data/processed/*_results*.csv
+!data/processed/*summary*.csv
+!data/processed/*metadata*.json
+
+# Pipeline state
+.pipeline_state/*.FAIL
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.pipeline_state/

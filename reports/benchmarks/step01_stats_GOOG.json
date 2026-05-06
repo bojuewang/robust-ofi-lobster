@@ -1,0 +1,40 @@
+{
+  "ticker": "GOOG",
+  "zip_path": "data/raw/LOBSTER_SampleFile_GOOG_2012-06-21_10.zip",
+  "message_member": "GOOG_2012-06-21_34200000_57600000_message_10.csv",
+  "orderbook_member": "GOOG_2012-06-21_34200000_57600000_orderbook_10.csv",
+  "message_rows": 147916,
+  "orderbook_rows": null,
+  "first_timestamp": 34200.015105074,
+  "last_timestamp": 57599.871751084,
+  "clean_message_rows": 147916,
+  "event_bins": 22678,
+  "carry_forward_bins": 24122,
+  "event_type_counts": {
+    "1": 71258,
+    "2": 19,
+    "3": 64961,
+    "4": 7765,
+    "5": 3913
+  },
+  "event_family_counts": {
+    "can": 64980,
+    "exe": 11678,
+    "sub": 71258
+  },
+  "volume_by_family": {
+    "can": 4040690.0,
+    "exe": 706125.0,
+    "sub": 4520540.0
+  },
+  "orderbook_sample_audit": {
+    "sample_rows": 500,
+    "sample_columns": 40,
+    "ask1_min": 577.51,
+    "bid1_min": 577.24,
+    "spread_min": 0.009999999999990905,
+    "spread_median": 0.4900000000000091,
+    "positive_best_sizes": true
+  },
+  "event_summary_path": "data/interim/event_summary_GOOG.csv"
+}

@@ -1,0 +1,505 @@
+{
+  "config": {
+    "tickers": [
+      "AMZN",
+      "AAPL",
+      "GOOG",
+      "INTC",
+      "MSFT"
+    ],
+    "levels": 10,
+    "kappa0": 34200.0,
+    "kappa1": 57600.0,
+    "bin_seconds": 0.5,
+    "n_bins": 46800,
+    "train_val_test": {
+      "train": 32760,
+      "val": 7020,
+      "test": 7020
+    }
+  },
+  "ticker_stats": [
+    {
+      "ticker": "AMZN",
+      "zip_path": "data/raw/LOBSTER_SampleFile_AMZN_2012-06-21_10.zip",
+      "message_member": "AMZN_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "AMZN_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 269748,
+      "orderbook_rows": null,
+      "first_timestamp": 34200.017459617,
+      "last_timestamp": 57599.95935965,
+      "clean_message_rows": 269748,
+      "event_bins": 29801,
+      "carry_forward_bins": 16999,
+      "event_type_counts": {
+        "1": 131954,
+        "2": 2917,
+        "3": 123458,
+        "4": 8974,
+        "5": 2445
+      },
+      "event_family_counts": {
+        "can": 126375,
+        "exe": 11419,
+        "sub": 131954
+      },
+      "volume_by_family": {
+        "can": 12292445.0,
+        "exe": 810755.0,
+        "sub": 13027425.0
+      },
+      "orderbook_sample_audit": {
+        "sample_rows": 500,
+        "sample_columns": 40,
+        "ask1_min": 223.86,
+        "bid1_min": 223.18,
+        "spread_min": 0.020000000000010232,
+        "spread_median": 0.19999999999998863,
+        "positive_best_sizes": true
+      },
+      "event_summary_path": "data/interim/event_summary_AMZN.csv"
+    },
+    {
+      "ticker": "AAPL",
+      "zip_path": "data/raw/LOBSTER_SampleFile_AAPL_2012-06-21_10.zip",
+      "message_member": "AAPL_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "AAPL_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 400391,
+      "orderbook_rows": null,
+      "first_timestamp": 34200.004241176,
+      "last_timestamp": 57599.913117637,
+      "clean_message_rows": 400391,
+      "event_bins": 34800,
+      "carry_forward_bins": 12000,
+      "event_type_counts": {
+        "1": 191015,
+        "2": 3260,
+        "3": 171126,
+        "4": 23658,
+        "5": 11332
+      },
+      "event_family_counts": {
+        "can": 174386,
+        "exe": 34990,
+        "sub": 191015
+      },
+      "volume_by_family": {
+        "can": 15494937.0,
+        "exe": 2850140.0,
+        "sub": 17185977.0
+      },
+      "orderbook_sample_audit": {
+        "sample_rows": 500,
+        "sample_columns": 40,
+        "ask1_min": 585.39,
+        "bid1_min": 585.3,
+        "spread_min": 0.009999999999990905,
+        "spread_median": 0.1999999999999318,
+        "positive_best_sizes": true
+      },
+      "event_summary_path": "data/interim/event_summary_AAPL.csv"
+    },
+    {
+      "ticker": "GOOG",
+      "zip_path": "data/raw/LOBSTER_SampleFile_GOOG_2012-06-21_10.zip",
+      "message_member": "GOOG_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "GOOG_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 147916,
+      "orderbook_rows": null,
+      "first_timestamp": 34200.015105074,
+      "last_timestamp": 57599.871751084,
+      "clean_message_rows": 147916,
+      "event_bins": 22678,
+      "carry_forward_bins": 24122,
+      "event_type_counts": {
+        "1": 71258,
+        "2": 19,
+        "3": 64961,
+        "4": 7765,
+        "5": 3913
+      },
+      "event_family_counts": {
+        "can": 64980,
+        "exe": 11678,
+        "sub": 71258
+      },
+      "volume_by_family": {
+        "can": 4040690.0,
+        "exe": 706125.0,
+        "sub": 4520540.0
+      },
+      "orderbook_sample_audit": {
+        "sample_rows": 500,
+        "sample_columns": 40,
+        "ask1_min": 577.51,
+        "bid1_min": 577.24,
+        "spread_min": 0.009999999999990905,
+        "spread_median": 0.4900000000000091,
+        "positive_best_sizes": true
+      },
+      "event_summary_path": "data/interim/event_summary_GOOG.csv"
+    },
+    {
+      "ticker": "INTC",
+      "zip_path": "data/raw/LOBSTER_SampleFile_INTC_2012-06-21_10.zip",
+      "message_member": "INTC_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "INTC_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 624040,
+      "orderbook_rows": null,
+      "first_timestamp": 34200.005742728,
+      "last_timestamp": 57599.948441634,
+      "clean_message_rows": 624040,
+      "event_bins": 36086,
+      "carry_forward_bins": 10714,
+      "event_type_counts": {
+        "1": 304790,
+        "2": 8028,
+        "3": 278739,
+        "4": 28924,
+        "5": 3559
+      },
+      "event_family_counts": {
+        "can": 286767,
+        "exe": 32483,
+        "sub": 304790
+      },
+      "volume_by_family": {
+        "can": 137787556.0,
+        "exe": 10471645.0,
+        "sub": 149004041.0
+      },
+      "orderbook_sample_audit": {
+        "sample_rows": 500,
+        "sample_columns": 40,
+        "ask1_min": 27.52,
+        "bid1_min": 27.5,
+        "spread_min": 0.00999999999999801,
+        "spread_median": 0.010000000000001563,
+        "positive_best_sizes": true
+      },
+      "event_summary_path": "data/interim/event_summary_INTC.csv"
+    },
+    {
+      "ticker": "MSFT",
+      "zip_path": "data/raw/LOBSTER_SampleFile_MSFT_2012-06-21_10.zip",
+      "message_member": "MSFT_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "MSFT_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 668765,
+      "orderbook_rows": null,
+      "first_timestamp": 34200.01399412,
+      "last_timestamp": 57599.907796528,
+      "clean_message_rows": 668765,
+      "event_bins": 37005,
+      "carry_forward_bins": 9795,
+      "event_type_counts": {
+        "1": 329566,
+        "2": 5602,
+        "3": 300183,
+        "4": 29798,
+        "5": 3616
+      },
+      "event_family_counts": {
+        "can": 305785,
+        "exe": 33414,
+        "sub": 329566
+      },
+      "volume_by_family": {
+        "can": 161500543.0,
+        "exe": 10824421.0,
+        "sub": 174783168.0
+      },
+      "orderbook_sample_audit": {
+        "sample_rows": 500,
+        "sample_columns": 40,
+        "ask1_min": 30.97,
+        "bid1_min": 30.95,
+        "spread_min": 0.00999999999999801,
+        "spread_median": 0.010000000000001563,
+        "positive_best_sizes": true
+      },
+      "event_summary_path": "data/interim/event_summary_MSFT.csv"
+    }
+  ],
+  "any_asset_event_bins": 46290,
+  "benchmark": {
+    "overall_status": "PASS",
+    "checks": [
+      {
+        "name": "AMZN_zip_found",
+        "status": "PASS",
+        "observed": "data/raw/LOBSTER_SampleFile_AMZN_2012-06-21_10.zip",
+        "expected": "exists"
+      },
+      {
+        "name": "AMZN_orderbook_member_exists",
+        "status": "PASS",
+        "observed": "AMZN_2012-06-21_34200000_57600000_orderbook_10.csv",
+        "expected": "orderbook csv exists"
+      },
+      {
+        "name": "AMZN_expected_message_row_count",
+        "status": "PASS",
+        "observed": 269748,
+        "expected": 269748
+      },
+      {
+        "name": "AMZN_timestamp_start",
+        "status": "PASS",
+        "observed": 34200.017459617,
+        "expected": "[34200.0, 34201.0)"
+      },
+      {
+        "name": "AMZN_timestamp_end",
+        "status": "PASS",
+        "observed": 57599.95935965,
+        "expected": "(57599.0, 57600.0)"
+      },
+      {
+        "name": "AMZN_event_bins",
+        "status": "PASS",
+        "observed": 29801,
+        "expected": 29801
+      },
+      {
+        "name": "AMZN_orderbook_has_40_columns",
+        "status": "PASS",
+        "observed": 40,
+        "expected": 40
+      },
+      {
+        "name": "AMZN_sample_spread_positive",
+        "status": "PASS",
+        "observed": 0.020000000000010232,
+        "expected": "> 0"
+      },
+      {
+        "name": "AMZN_sample_best_sizes_positive",
+        "status": "PASS",
+        "observed": true,
+        "expected": true
+      },
+      {
+        "name": "AAPL_zip_found",
+        "status": "PASS",
+        "observed": "data/raw/LOBSTER_SampleFile_AAPL_2012-06-21_10.zip",
+        "expected": "exists"
+      },
+      {
+        "name": "AAPL_orderbook_member_exists",
+        "status": "PASS",
+        "observed": "AAPL_2012-06-21_34200000_57600000_orderbook_10.csv",
+        "expected": "orderbook csv exists"
+      },
+      {
+        "name": "AAPL_expected_message_row_count",
+        "status": "PASS",
+        "observed": 400391,
+        "expected": 400391
+      },
+      {
+        "name": "AAPL_timestamp_start",
+        "status": "PASS",
+        "observed": 34200.004241176,
+        "expected": "[34200.0, 34201.0)"
+      },
+      {
+        "name": "AAPL_timestamp_end",
+        "status": "PASS",
+        "observed": 57599.913117637,
+        "expected": "(57599.0, 57600.0)"
+      },
+      {
+        "name": "AAPL_event_bins",
+        "status": "PASS",
+        "observed": 34800,
+        "expected": 34800
+      },
+      {
+        "name": "AAPL_orderbook_has_40_columns",
+        "status": "PASS",
+        "observed": 40,
+        "expected": 40
+      },
+      {
+        "name": "AAPL_sample_spread_positive",
+        "status": "PASS",
+        "observed": 0.009999999999990905,
+        "expected": "> 0"
+      },
+      {
+        "name": "AAPL_sample_best_sizes_positive",
+        "status": "PASS",
+        "observed": true,
+        "expected": true
+      },
+      {
+        "name": "GOOG_zip_found",
+        "status": "PASS",
+        "observed": "data/raw/LOBSTER_SampleFile_GOOG_2012-06-21_10.zip",
+        "expected": "exists"
+      },
+      {
+        "name": "GOOG_orderbook_member_exists",
+        "status": "PASS",
+        "observed": "GOOG_2012-06-21_34200000_57600000_orderbook_10.csv",
+        "expected": "orderbook csv exists"
+      },
+      {
+        "name": "GOOG_expected_message_row_count",
+        "status": "PASS",
+        "observed": 147916,
+        "expected": 147916
+      },
+      {
+        "name": "GOOG_timestamp_start",
+        "status": "PASS",
+        "observed": 34200.015105074,
+        "expected": "[34200.0, 34201.0)"
+      },
+      {
+        "name": "GOOG_timestamp_end",
+        "status": "PASS",
+        "observed": 57599.871751084,
+        "expected": "(57599.0, 57600.0)"
+      },
+      {
+        "name": "GOOG_event_bins",
+        "status": "PASS",
+        "observed": 22678,
+        "expected": 22678
+      },
+      {
+        "name": "GOOG_orderbook_has_40_columns",
+        "status": "PASS",
+        "observed": 40,
+        "expected": 40
+      },
+      {
+        "name": "GOOG_sample_spread_positive",
+        "status": "PASS",
+        "observed": 0.009999999999990905,
+        "expected": "> 0"
+      },
+      {
+        "name": "GOOG_sample_best_sizes_positive",
+        "status": "PASS",
+        "observed": true,
+        "expected": true
+      },
+      {
+        "name": "INTC_zip_found",
+        "status": "PASS",
+        "observed": "data/raw/LOBSTER_SampleFile_INTC_2012-06-21_10.zip",
+        "expected": "exists"
+      },
+      {
+        "name": "INTC_orderbook_member_exists",
+        "status": "PASS",
+        "observed": "INTC_2012-06-21_34200000_57600000_orderbook_10.csv",
+        "expected": "orderbook csv exists"
+      },
+      {
+        "name": "INTC_expected_message_row_count",
+        "status": "PASS",
+        "observed": 624040,
+        "expected": 624040
+      },
+      {
+        "name": "INTC_timestamp_start",
+        "status": "PASS",
+        "observed": 34200.005742728,
+        "expected": "[34200.0, 34201.0)"
+      },
+      {
+        "name": "INTC_timestamp_end",
+        "status": "PASS",
+        "observed": 57599.948441634,
+        "expected": "(57599.0, 57600.0)"
+      },
+      {
+        "name": "INTC_event_bins",
+        "status": "PASS",
+        "observed": 36086,
+        "expected": 36086
+      },
+      {
+        "name": "INTC_orderbook_has_40_columns",
+        "status": "PASS",
+        "observed": 40,
+        "expected": 40
+      },
+      {
+        "name": "INTC_sample_spread_positive",
+        "status": "PASS",
+        "observed": 0.00999999999999801,
+        "expected": "> 0"
+      },
+      {
+        "name": "INTC_sample_best_sizes_positive",
+        "status": "PASS",
+        "observed": true,
+        "expected": true
+      },
+      {
+        "name": "MSFT_zip_found",
+        "status": "PASS",
+        "observed": "data/raw/LOBSTER_SampleFile_MSFT_2012-06-21_10.zip",
+        "expected": "exists"
+      },
+      {
+        "name": "MSFT_orderbook_member_exists",
+        "status": "PASS",
+        "observed": "MSFT_2012-06-21_34200000_57600000_orderbook_10.csv",
+        "expected": "orderbook csv exists"
+      },
+      {
+        "name": "MSFT_expected_message_row_count",
+        "status": "PASS",
+        "observed": 668765,
+        "expected": 668765
+      },
+      {
+        "name": "MSFT_timestamp_start",
+        "status": "PASS",
+        "observed": 34200.01399412,
+        "expected": "[34200.0, 34201.0)"
+      },
+      {
+        "name": "MSFT_timestamp_end",
+        "status": "PASS",
+        "observed": 57599.907796528,
+        "expected": "(57599.0, 57600.0)"
+      },
+      {
+        "name": "MSFT_event_bins",
+        "status": "PASS",
+        "observed": 37005,
+        "expected": 37005
+      },
+      {
+        "name": "MSFT_orderbook_has_40_columns",
+        "status": "PASS",
+        "observed": 40,
+        "expected": 40
+      },
+      {
+        "name": "MSFT_sample_spread_positive",
+        "status": "PASS",
+        "observed": 0.00999999999999801,
+        "expected": "> 0"
+      },
+      {
+        "name": "MSFT_sample_best_sizes_positive",
+        "status": "PASS",
+        "observed": true,
+        "expected": true
+      },
+      {
+        "name": "any_asset_event_bins",
+        "status": "PASS",
+        "observed": 46290,
+        "expected": 46290
+      }
+    ]
+  }
+}

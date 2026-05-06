@@ -1,0 +1,40 @@
+{
+  "ticker": "AMZN",
+  "zip_path": "data/raw/LOBSTER_SampleFile_AMZN_2012-06-21_10.zip",
+  "message_member": "AMZN_2012-06-21_34200000_57600000_message_10.csv",
+  "orderbook_member": "AMZN_2012-06-21_34200000_57600000_orderbook_10.csv",
+  "message_rows": 269748,
+  "orderbook_rows": null,
+  "first_timestamp": 34200.017459617,
+  "last_timestamp": 57599.95935965,
+  "clean_message_rows": 269748,
+  "event_bins": 29801,
+  "carry_forward_bins": 16999,
+  "event_type_counts": {
+    "1": 131954,
+    "2": 2917,
+    "3": 123458,
+    "4": 8974,
+    "5": 2445
+  },
+  "event_family_counts": {
+    "can": 126375,
+    "exe": 11419,
+    "sub": 131954
+  },
+  "volume_by_family": {
+    "can": 12292445.0,
+    "exe": 810755.0,
+    "sub": 13027425.0
+  },
+  "orderbook_sample_audit": {
+    "sample_rows": 500,
+    "sample_columns": 40,
+    "ask1_min": 223.86,
+    "bid1_min": 223.18,
+    "spread_min": 0.020000000000010232,
+    "spread_median": 0.19999999999998863,
+    "positive_best_sizes": true
+  },
+  "event_summary_path": "data/interim/event_summary_AMZN.csv"
+}

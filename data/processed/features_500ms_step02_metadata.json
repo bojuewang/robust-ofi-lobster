@@ -1,0 +1,156 @@
+{
+  "root": "/mnt/c/Users/Wangb/robust-ofi/robust-ofi-lobster",
+  "output_npz": "data/processed/features_500ms_step02.npz",
+  "metadata_json": "data/processed/features_500ms_step02_metadata.json",
+  "ticker_summary_csv": "data/processed/features_500ms_step02_ticker_summary.csv",
+  "tickers": [
+    "AMZN",
+    "AAPL",
+    "GOOG",
+    "INTC",
+    "MSFT"
+  ],
+  "T": 46800,
+  "N": 5,
+  "H": 10,
+  "D": 51,
+  "feature_names": [
+    "ofi_share_h1",
+    "ofi_share_h2",
+    "ofi_share_h3",
+    "ofi_share_h4",
+    "ofi_share_h5",
+    "ofi_share_h6",
+    "ofi_share_h7",
+    "ofi_share_h8",
+    "ofi_share_h9",
+    "ofi_share_h10",
+    "ofi_dollar_h1",
+    "ofi_dollar_h2",
+    "ofi_dollar_h3",
+    "ofi_dollar_h4",
+    "ofi_dollar_h5",
+    "ofi_dollar_h6",
+    "ofi_dollar_h7",
+    "ofi_dollar_h8",
+    "ofi_dollar_h9",
+    "ofi_dollar_h10",
+    "obi_share_h1",
+    "obi_share_h2",
+    "obi_share_h3",
+    "obi_share_h4",
+    "obi_share_h5",
+    "obi_share_h6",
+    "obi_share_h7",
+    "obi_share_h8",
+    "obi_share_h9",
+    "obi_share_h10",
+    "obi_dollar_h1",
+    "obi_dollar_h2",
+    "obi_dollar_h3",
+    "obi_dollar_h4",
+    "obi_dollar_h5",
+    "obi_dollar_h6",
+    "obi_dollar_h7",
+    "obi_dollar_h8",
+    "obi_dollar_h9",
+    "obi_dollar_h10",
+    "spread",
+    "weighted_mid",
+    "V_execution_volume",
+    "v_execution_traded_value",
+    "deltaP_submission",
+    "Q_submission_signed",
+    "deltaP_cancellation",
+    "Q_cancellation_signed",
+    "deltaP_execution",
+    "Q_execution_signed",
+    "event_activity_mask"
+  ],
+  "X_raw_shape": [
+    46800,
+    5,
+    51
+  ],
+  "X_std_shape": [
+    46800,
+    5,
+    51
+  ],
+  "mid_shape": [
+    46800,
+    5
+  ],
+  "event_mask_shape": [
+    46800,
+    5
+  ],
+  "time_window_seconds": [
+    34200.0,
+    57600.0
+  ],
+  "bin_width_seconds": 0.5,
+  "splits": {
+    "train": [
+      0,
+      32760
+    ],
+    "validation": [
+      32760,
+      39780
+    ],
+    "test": [
+      39780,
+      46800
+    ]
+  },
+  "taus": [
+    1,
+    2,
+    10,
+    20
+  ],
+  "target_audit": [
+    {
+      "tau": 1,
+      "valid_samples_per_asset": 46799,
+      "train_samples": 32759,
+      "val_samples": 7019,
+      "test_samples": 7019,
+      "max_abs_logret": 0.002544519491493702,
+      "max_abs_spread_return": 14.501938819885254
+    },
+    {
+      "tau": 2,
+      "valid_samples_per_asset": 46798,
+      "train_samples": 32758,
+      "val_samples": 7018,
+      "test_samples": 7018,
+      "max_abs_logret": 0.002546370727941394,
+      "max_abs_spread_return": 14.501938819885254
+    },
+    {
+      "tau": 10,
+      "valid_samples_per_asset": 46790,
+      "train_samples": 32750,
+      "val_samples": 7010,
+      "test_samples": 7010,
+      "max_abs_logret": 0.0025622157845646143,
+      "max_abs_spread_return": 19.0002384185791
+    },
+    {
+      "tau": 20,
+      "valid_samples_per_asset": 46780,
+      "train_samples": 32740,
+      "val_samples": 7000,
+      "test_samples": 7000,
+      "max_abs_logret": 0.003225301392376423,
+      "max_abs_spread_return": 24.501012802124023
+    }
+  ],
+  "nonconstant_train_features": 255,
+  "near_constant_train_features": 0,
+  "max_abs_train_mean_nonconstant": 1.2694195449359087e-05,
+  "max_abs_train_std_error_nonconstant": 5.553882576059266e-08,
+  "any_asset_event_bins": 46290
+}

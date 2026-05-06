@@ -1,0 +1,613 @@
+{
+  "overall_status": "PASS",
+  "metadata": {
+    "root": "/mnt/c/Users/Wangb/robust-ofi/robust-ofi-lobster",
+    "output_npz": "data/processed/features_500ms_step02.npz",
+    "metadata_json": "data/processed/features_500ms_step02_metadata.json",
+    "ticker_summary_csv": "data/processed/features_500ms_step02_ticker_summary.csv",
+    "tickers": [
+      "AMZN",
+      "AAPL",
+      "GOOG",
+      "INTC",
+      "MSFT"
+    ],
+    "T": 46800,
+    "N": 5,
+    "H": 10,
+    "D": 51,
+    "feature_names": [
+      "ofi_share_h1",
+      "ofi_share_h2",
+      "ofi_share_h3",
+      "ofi_share_h4",
+      "ofi_share_h5",
+      "ofi_share_h6",
+      "ofi_share_h7",
+      "ofi_share_h8",
+      "ofi_share_h9",
+      "ofi_share_h10",
+      "ofi_dollar_h1",
+      "ofi_dollar_h2",
+      "ofi_dollar_h3",
+      "ofi_dollar_h4",
+      "ofi_dollar_h5",
+      "ofi_dollar_h6",
+      "ofi_dollar_h7",
+      "ofi_dollar_h8",
+      "ofi_dollar_h9",
+      "ofi_dollar_h10",
+      "obi_share_h1",
+      "obi_share_h2",
+      "obi_share_h3",
+      "obi_share_h4",
+      "obi_share_h5",
+      "obi_share_h6",
+      "obi_share_h7",
+      "obi_share_h8",
+      "obi_share_h9",
+      "obi_share_h10",
+      "obi_dollar_h1",
+      "obi_dollar_h2",
+      "obi_dollar_h3",
+      "obi_dollar_h4",
+      "obi_dollar_h5",
+      "obi_dollar_h6",
+      "obi_dollar_h7",
+      "obi_dollar_h8",
+      "obi_dollar_h9",
+      "obi_dollar_h10",
+      "spread",
+      "weighted_mid",
+      "V_execution_volume",
+      "v_execution_traded_value",
+      "deltaP_submission",
+      "Q_submission_signed",
+      "deltaP_cancellation",
+      "Q_cancellation_signed",
+      "deltaP_execution",
+      "Q_execution_signed",
+      "event_activity_mask"
+    ],
+    "X_raw_shape": [
+      46800,
+      5,
+      51
+    ],
+    "X_std_shape": [
+      46800,
+      5,
+      51
+    ],
+    "mid_shape": [
+      46800,
+      5
+    ],
+    "event_mask_shape": [
+      46800,
+      5
+    ],
+    "time_window_seconds": [
+      34200.0,
+      57600.0
+    ],
+    "bin_width_seconds": 0.5,
+    "splits": {
+      "train": [
+        0,
+        32760
+      ],
+      "validation": [
+        32760,
+        39780
+      ],
+      "test": [
+        39780,
+        46800
+      ]
+    },
+    "taus": [
+      1,
+      2,
+      10,
+      20
+    ],
+    "target_audit": [
+      {
+        "tau": 1,
+        "valid_samples_per_asset": 46799,
+        "train_samples": 32759,
+        "val_samples": 7019,
+        "test_samples": 7019,
+        "max_abs_logret": 0.002544519491493702,
+        "max_abs_spread_return": 14.501938819885254
+      },
+      {
+        "tau": 2,
+        "valid_samples_per_asset": 46798,
+        "train_samples": 32758,
+        "val_samples": 7018,
+        "test_samples": 7018,
+        "max_abs_logret": 0.002546370727941394,
+        "max_abs_spread_return": 14.501938819885254
+      },
+      {
+        "tau": 10,
+        "valid_samples_per_asset": 46790,
+        "train_samples": 32750,
+        "val_samples": 7010,
+        "test_samples": 7010,
+        "max_abs_logret": 0.0025622157845646143,
+        "max_abs_spread_return": 19.0002384185791
+      },
+      {
+        "tau": 20,
+        "valid_samples_per_asset": 46780,
+        "train_samples": 32740,
+        "val_samples": 7000,
+        "test_samples": 7000,
+        "max_abs_logret": 0.003225301392376423,
+        "max_abs_spread_return": 24.501012802124023
+      }
+    ],
+    "nonconstant_train_features": 255,
+    "near_constant_train_features": 0,
+    "max_abs_train_mean_nonconstant": 1.2694195449359087e-05,
+    "max_abs_train_std_error_nonconstant": 5.553882576059266e-08,
+    "any_asset_event_bins": 46290
+  },
+  "ticker_summaries": [
+    {
+      "ticker": "AMZN",
+      "zip_file": "data/raw/LOBSTER_SampleFile_AMZN_2012-06-21_10.zip",
+      "message_member": "AMZN_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "AMZN_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 269748,
+      "orderbook_rows": 269748,
+      "event_bins": 29801,
+      "carry_forward_bins": 16999,
+      "best_spread_min": 0.009999999999990905,
+      "best_spread_median": 0.12000000000000455,
+      "best_spread_max": 0.7299999999999898,
+      "mid_min": 220.55,
+      "mid_max": 226.015,
+      "invalid_deep_level_cells": 0,
+      "nonzero_ofi_share_entries": 166061,
+      "nonzero_message_flow_bins": 29801
+    },
+    {
+      "ticker": "AAPL",
+      "zip_file": "data/raw/LOBSTER_SampleFile_AAPL_2012-06-21_10.zip",
+      "message_member": "AAPL_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "AAPL_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 400391,
+      "orderbook_rows": 400391,
+      "event_bins": 34800,
+      "carry_forward_bins": 12000,
+      "best_spread_min": 0.009999999999990905,
+      "best_spread_median": 0.14999999999997726,
+      "best_spread_max": 0.8899999999999864,
+      "mid_min": 577.48,
+      "mid_max": 588.175,
+      "invalid_deep_level_cells": 0,
+      "nonzero_ofi_share_entries": 231480,
+      "nonzero_message_flow_bins": 34800
+    },
+    {
+      "ticker": "GOOG",
+      "zip_file": "data/raw/LOBSTER_SampleFile_GOOG_2012-06-21_10.zip",
+      "message_member": "GOOG_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "GOOG_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 147916,
+      "orderbook_rows": 147916,
+      "event_bins": 22678,
+      "carry_forward_bins": 24122,
+      "best_spread_min": 0.009999999999990905,
+      "best_spread_median": 0.25,
+      "best_spread_max": 2.300000000000068,
+      "mid_min": 563.765,
+      "mid_max": 579.645,
+      "invalid_deep_level_cells": 0,
+      "nonzero_ofi_share_entries": 134038,
+      "nonzero_message_flow_bins": 22678
+    },
+    {
+      "ticker": "INTC",
+      "zip_file": "data/raw/LOBSTER_SampleFile_INTC_2012-06-21_10.zip",
+      "message_member": "INTC_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "INTC_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 624040,
+      "orderbook_rows": 624040,
+      "event_bins": 36086,
+      "carry_forward_bins": 10714,
+      "best_spread_min": 0.00999999999999801,
+      "best_spread_median": 0.010000000000001563,
+      "best_spread_max": 0.030000000000001137,
+      "mid_min": 26.615000000000002,
+      "mid_max": 27.59,
+      "invalid_deep_level_cells": 0,
+      "nonzero_ofi_share_entries": 108376,
+      "nonzero_message_flow_bins": 36086
+    },
+    {
+      "ticker": "MSFT",
+      "zip_file": "data/raw/LOBSTER_SampleFile_MSFT_2012-06-21_10.zip",
+      "message_member": "MSFT_2012-06-21_34200000_57600000_message_10.csv",
+      "orderbook_member": "MSFT_2012-06-21_34200000_57600000_orderbook_10.csv",
+      "message_rows": 668765,
+      "orderbook_rows": 668765,
+      "event_bins": 37005,
+      "carry_forward_bins": 9795,
+      "best_spread_min": 0.00999999999999801,
+      "best_spread_median": 0.010000000000001563,
+      "best_spread_max": 0.030000000000001137,
+      "mid_min": 30.064999999999998,
+      "mid_max": 31.125,
+      "invalid_deep_level_cells": 0,
+      "nonzero_ofi_share_entries": 125739,
+      "nonzero_message_flow_bins": 37005
+    }
+  ],
+  "checks": [
+    {
+      "check": "step01_gate_exists",
+      "status": "PASS",
+      "observed": ".pipeline_state/step01_raw_audit.PASS",
+      "expected": "exists"
+    },
+    {
+      "check": "time_bins",
+      "status": "PASS",
+      "observed": 46800,
+      "expected": 46800
+    },
+    {
+      "check": "chronological_split",
+      "status": "PASS",
+      "observed": [
+        32760,
+        7020,
+        7020
+      ],
+      "expected": [
+        32760,
+        7020,
+        7020
+      ]
+    },
+    {
+      "check": "feature_dimension_contract",
+      "status": "PASS",
+      "observed": 51,
+      "expected": 51
+    },
+    {
+      "check": "AMZN_X_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        51
+      ],
+      "expected": [
+        46800,
+        51
+      ]
+    },
+    {
+      "check": "AMZN_event_bins",
+      "status": "PASS",
+      "observed": 29801,
+      "expected": 29801
+    },
+    {
+      "check": "AMZN_spread_positive",
+      "status": "PASS",
+      "observed": 0.009999999776482582,
+      "expected": "> 0"
+    },
+    {
+      "check": "AMZN_mid_positive",
+      "status": "PASS",
+      "observed": 220.5500030517578,
+      "expected": "> 0"
+    },
+    {
+      "check": "AMZN_X_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "AAPL_X_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        51
+      ],
+      "expected": [
+        46800,
+        51
+      ]
+    },
+    {
+      "check": "AAPL_event_bins",
+      "status": "PASS",
+      "observed": 34800,
+      "expected": 34800
+    },
+    {
+      "check": "AAPL_spread_positive",
+      "status": "PASS",
+      "observed": 0.009999999776482582,
+      "expected": "> 0"
+    },
+    {
+      "check": "AAPL_mid_positive",
+      "status": "PASS",
+      "observed": 577.47998046875,
+      "expected": "> 0"
+    },
+    {
+      "check": "AAPL_X_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "GOOG_X_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        51
+      ],
+      "expected": [
+        46800,
+        51
+      ]
+    },
+    {
+      "check": "GOOG_event_bins",
+      "status": "PASS",
+      "observed": 22678,
+      "expected": 22678
+    },
+    {
+      "check": "GOOG_spread_positive",
+      "status": "PASS",
+      "observed": 0.009999999776482582,
+      "expected": "> 0"
+    },
+    {
+      "check": "GOOG_mid_positive",
+      "status": "PASS",
+      "observed": 563.7650146484375,
+      "expected": "> 0"
+    },
+    {
+      "check": "GOOG_X_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "INTC_X_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        51
+      ],
+      "expected": [
+        46800,
+        51
+      ]
+    },
+    {
+      "check": "INTC_event_bins",
+      "status": "PASS",
+      "observed": 36086,
+      "expected": 36086
+    },
+    {
+      "check": "INTC_spread_positive",
+      "status": "PASS",
+      "observed": 0.009999999776482582,
+      "expected": "> 0"
+    },
+    {
+      "check": "INTC_mid_positive",
+      "status": "PASS",
+      "observed": 26.614999771118164,
+      "expected": "> 0"
+    },
+    {
+      "check": "INTC_X_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "MSFT_X_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        51
+      ],
+      "expected": [
+        46800,
+        51
+      ]
+    },
+    {
+      "check": "MSFT_event_bins",
+      "status": "PASS",
+      "observed": 37005,
+      "expected": 37005
+    },
+    {
+      "check": "MSFT_spread_positive",
+      "status": "PASS",
+      "observed": 0.009999999776482582,
+      "expected": "> 0"
+    },
+    {
+      "check": "MSFT_mid_positive",
+      "status": "PASS",
+      "observed": 30.065000534057617,
+      "expected": "> 0"
+    },
+    {
+      "check": "MSFT_X_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "X_raw_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        5,
+        51
+      ],
+      "expected": [
+        46800,
+        5,
+        51
+      ]
+    },
+    {
+      "check": "any_asset_event_bins",
+      "status": "PASS",
+      "observed": 46290,
+      "expected": 46290
+    },
+    {
+      "check": "X_raw_all_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "X_std_shape",
+      "status": "PASS",
+      "observed": [
+        46800,
+        5,
+        51
+      ],
+      "expected": [
+        46800,
+        5,
+        51
+      ]
+    },
+    {
+      "check": "X_std_all_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "standardized_train_mean_close_to_zero",
+      "status": "PASS",
+      "observed": 1.2694195449359087e-05,
+      "expected": "< 1e-4"
+    },
+    {
+      "check": "standardized_train_std_close_to_one",
+      "status": "PASS",
+      "observed": 5.553882576059266e-08,
+      "expected": "< 1e-4"
+    },
+    {
+      "check": "target_tau_1_logret_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_1_spread_return_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_1_tail_nan",
+      "status": "PASS",
+      "observed": "tail NaN",
+      "expected": "tail NaN"
+    },
+    {
+      "check": "target_tau_2_logret_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_2_spread_return_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_2_tail_nan",
+      "status": "PASS",
+      "observed": "tail NaN",
+      "expected": "tail NaN"
+    },
+    {
+      "check": "target_tau_10_logret_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_10_spread_return_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_10_tail_nan",
+      "status": "PASS",
+      "observed": "tail NaN",
+      "expected": "tail NaN"
+    },
+    {
+      "check": "target_tau_20_logret_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_20_spread_return_finite",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "target_tau_20_tail_nan",
+      "status": "PASS",
+      "observed": "tail NaN",
+      "expected": "tail NaN"
+    },
+    {
+      "check": "output_npz_exists",
+      "status": "PASS",
+      "observed": "data/processed/features_500ms_step02.npz",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "metadata_json_exists",
+      "status": "PASS",
+      "observed": "data/processed/features_500ms_step02_metadata.json",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "ticker_summary_csv_exists",
+      "status": "PASS",
+      "observed": "data/processed/features_500ms_step02_ticker_summary.csv",
+      "expected": "nonempty file"
+    }
+  ]
+}

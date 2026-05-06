@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "final_rows": [
+    {
+      "tau": 1,
+      "step03_best_model": "lasso_own",
+      "step03_best_graph": "none",
+      "step03_clean_mse": 2.9290028180639638e-09,
+      "step03_directional_accuracy": 0.602309973466521,
+      "erm_clean_mse_reference": 2.9753772778917664e-09,
+      "feature_robust_clean_mse": 3.0306708254101977e-09,
+      "feature_erm_deg_mse_0.1": 3.8783918299145625e-09,
+      "feature_robust_deg_mse_0.1": 4.117618246368693e-09,
+      "feature_deg_mse_improvement_0.1": -2.3922641645413023e-10,
+      "feature_robust_choice": "rho=0.05,R=3",
+      "graph_robust_clean_mse": 2.983846503212817e-09,
+      "graph_erm_deg_mse_0.1": 8.294920306184395e-12,
+      "graph_robust_deg_mse_0.1": 6.197709012667474e-12,
+      "graph_deg_mse_improvement_0.1": 2.0972112935169207e-12,
+      "graph_erm_sensitivity_G": 1.1034142870236519e-10,
+      "graph_robust_sensitivity_G": 9.497132182241519e-11,
+      "graph_sensitivity_improvement": 1.5370106879949996e-11,
+      "graph_robust_choice": "rho=0.1,R=1"
+    },
+    {
+      "tau": 2,
+      "step03_best_model": "graph_linear_ridge",
+      "step03_best_graph": "return_abs",
+      "step03_clean_mse": 5.938356473222939e-09,
+      "step03_directional_accuracy": 0.5958549222797928,
+      "erm_clean_mse_reference": 5.948602943561809e-09,
+      "feature_robust_clean_mse": 6.2243636911318845e-09,
+      "feature_erm_deg_mse_0.1": 1.6957502513292866e-08,
+      "feature_robust_deg_mse_0.1": 1.882426969856965e-08,
+      "feature_deg_mse_improvement_0.1": -1.8667671852767853e-09,
+      "feature_robust_choice": "rho=0.05,R=1",
+      "graph_robust_clean_mse": 5.922629053856099e-09,
+      "graph_erm_deg_mse_0.1": 1.1401990462900358e-11,
+      "graph_robust_deg_mse_0.1": 5.357048138421305e-12,
+      "graph_deg_mse_improvement_0.1": 6.044942324479052e-12,
+      "graph_erm_sensitivity_G": 1.7558200293005255e-10,
+      "graph_robust_sensitivity_G": 1.0694979906029911e-10,
+      "graph_sensitivity_improvement": 6.863220386975344e-11,
+      "graph_robust_choice": "rho=0.2,R=1"
+    },
+    {
+      "tau": 10,
+      "step03_best_model": "graph_linear_ridge",
+      "step03_best_graph": "return_abs",
+      "step03_clean_mse": 3.174985607756753e-08,
+      "step03_directional_accuracy": 0.5751960784313725,
+      "erm_clean_mse_reference": 3.221320454827037e-08,
+      "feature_robust_clean_mse": 1.2816937555726327e-07,
+      "feature_erm_deg_mse_0.1": 4.813304812500974e-07,
+      "feature_robust_deg_mse_0.1": 4.119168863780942e-07,
+      "feature_deg_mse_improvement_0.1": 6.941359487200316e-08,
+      "feature_robust_choice": "rho=0.2,R=3",
+      "graph_robust_clean_mse": 3.1790801102715704e-08,
+      "graph_erm_deg_mse_0.1": 2.2099655438978516e-10,
+      "graph_robust_deg_mse_0.1": 1.0620127000038337e-10,
+      "graph_deg_mse_improvement_0.1": 1.1479528438940179e-10,
+      "graph_erm_sensitivity_G": 2.7927646445435883e-09,
+      "graph_robust_sensitivity_G": 1.8544864879843637e-09,
+      "graph_sensitivity_improvement": 9.382781565592246e-10,
+      "graph_robust_choice": "rho=0.2,R=3"
+    },
+    {
+      "tau": 20,
+      "step03_best_model": "graph_linear_ridge",
+      "step03_best_graph": "return_abs",
+      "step03_clean_mse": 6.607817937265281e-08,
+      "step03_directional_accuracy": 0.5513877551020409,
+      "erm_clean_mse_reference": 6.62759305214422e-08,
+      "feature_robust_clean_mse": 4.2673840994211787e-07,
+      "feature_erm_deg_mse_0.1": 1.6696007207883667e-06,
+      "feature_robust_deg_mse_0.1": 1.5967802085015137e-06,
+      "feature_deg_mse_improvement_0.1": 7.282051228685305e-08,
+      "feature_robust_choice": "rho=0.2,R=1",
+      "graph_robust_clean_mse": 6.567487531583538e-08,
+      "graph_erm_deg_mse_0.1": 6.709441890961898e-10,
+      "graph_robust_deg_mse_0.1": 4.2527403820713516e-10,
+      "graph_deg_mse_improvement_0.1": 2.4567015088905464e-10,
+      "graph_erm_sensitivity_G": 8.85256926097533e-09,
+      "graph_robust_sensitivity_G": 6.327778911963122e-09,
+      "graph_sensitivity_improvement": 2.524790349012207e-09,
+      "graph_robust_choice": "rho=0.2,R=3"
+    }
+  ],
+  "conclusion_rows": [
+    {
+      "tau": 1,
+      "feature_gain_positive": false,
+      "graph_gain_positive": true,
+      "clean_tradeoff_feature": 5.5293547518431296e-11,
+      "clean_tradeoff_graph": 8.469225321050544e-12,
+      "verdict": "graph robust improves; feature robust does not"
+    },
+    {
+      "tau": 2,
+      "feature_gain_positive": false,
+      "graph_gain_positive": true,
+      "clean_tradeoff_feature": 2.757607475700752e-10,
+      "clean_tradeoff_graph": -2.5973889705710462e-11,
+      "verdict": "graph robust improves; feature robust does not"
+    },
+    {
+      "tau": 10,
+      "feature_gain_positive": true,
+      "graph_gain_positive": true,
+      "clean_tradeoff_feature": 9.59561710089929e-08,
+      "clean_tradeoff_graph": -4.2240344555466436e-10,
+      "verdict": "both feature and graph robustness improve degradation"
+    },
+    {
+      "tau": 20,
+      "feature_gain_positive": true,
+      "graph_gain_positive": true,
+      "clean_tradeoff_feature": 3.6046247942067566e-07,
+      "clean_tradeoff_graph": -6.010552056068263e-10,
+      "verdict": "both feature and graph robustness improve degradation"
+    }
+  ],
+  "checks": [
+    {
+      "name": "step03_status_pass",
+      "status": "PASS",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "name": "step04b_status_pass",
+      "status": "PASS",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "name": "step05_status_pass",
+      "status": "PASS",
+      "observed": "PASS",
+      "expected": "PASS"
+    },
+    {
+      "name": "all_tau_in_step03",
+      "status": "PASS",
+      "observed": "[1, 2, 10, 20]",
+      "expected": "[1, 2, 10, 20]"
+    },
+    {
+      "name": "all_tau_in_step04b",
+      "status": "PASS",
+      "observed": "[1, 2, 10, 20]",
+      "expected": "[1, 2, 10, 20]"
+    },
+    {
+      "name": "all_tau_in_step05",
+      "status": "PASS",
+      "observed": "[1, 2, 10, 20]",
+      "expected": "[1, 2, 10, 20]"
+    },
+    {
+      "name": "final_rows_count",
+      "status": "PASS",
+      "observed": "4",
+      "expected": "4"
+    },
+    {
+      "name": "graph_improvement_all_tau",
+      "status": "PASS",
+      "observed": "['2.09721e-12', '6.04494e-12', '1.14795e-10', '2.4567e-10']",
+      "expected": "positive for all tau"
+    },
+    {
+      "name": "feature_improvement_some_tau",
+      "status": "PASS",
+      "observed": "['-2.39226e-10', '-1.86677e-09', '6.94136e-08', '7.28205e-08']",
+      "expected": "positive for at least one tau"
+    },
+    {
+      "name": "plots_created",
+      "status": "PASS",
+      "observed": "plots created",
+      "expected": "matplotlib plots saved"
+    }
+  ],
+  "artifacts": [
+    "reports/final/robust_ofi_final_summary.md",
+    "reports/final/final_ablation_table.csv",
+    "reports/figures/step06_degradation_improvement.png",
+    "reports/figures/step06_clean_mse_tradeoff.png",
+    "reports/figures/step06_graph_sensitivity_improvement.png"
+  ]
+}

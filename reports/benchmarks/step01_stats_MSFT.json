@@ -1,0 +1,40 @@
+{
+  "ticker": "MSFT",
+  "zip_path": "data/raw/LOBSTER_SampleFile_MSFT_2012-06-21_10.zip",
+  "message_member": "MSFT_2012-06-21_34200000_57600000_message_10.csv",
+  "orderbook_member": "MSFT_2012-06-21_34200000_57600000_orderbook_10.csv",
+  "message_rows": 668765,
+  "orderbook_rows": null,
+  "first_timestamp": 34200.01399412,
+  "last_timestamp": 57599.907796528,
+  "clean_message_rows": 668765,
+  "event_bins": 37005,
+  "carry_forward_bins": 9795,
+  "event_type_counts": {
+    "1": 329566,
+    "2": 5602,
+    "3": 300183,
+    "4": 29798,
+    "5": 3616
+  },
+  "event_family_counts": {
+    "can": 305785,
+    "exe": 33414,
+    "sub": 329566
+  },
+  "volume_by_family": {
+    "can": 161500543.0,
+    "exe": 10824421.0,
+    "sub": 174783168.0
+  },
+  "orderbook_sample_audit": {
+    "sample_rows": 500,
+    "sample_columns": 40,
+    "ask1_min": 30.97,
+    "bid1_min": 30.95,
+    "spread_min": 0.00999999999999801,
+    "spread_median": 0.010000000000001563,
+    "positive_best_sizes": true
+  },
+  "event_summary_path": "data/interim/event_summary_MSFT.csv"
+}
