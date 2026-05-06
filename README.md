@@ -70,6 +70,14 @@ docs/                 reproducibility and project-structure notes
 - `docs/RESULTS.md`
 - `docs/reproducibility_manifest.md`
 
+## Course submission artifacts
+
+- Phase II report draft/summary: `reports/final/robust_ofi_final_summary.md`
+- Final ablation table: `reports/final/final_ablation_table.csv`
+- LLM disclosure: `llm-usage.md`
+- External code and data note: `docs/EXTERNAL_CODE_AND_DATA.md`
+- Reproducibility manifest: `docs/reproducibility_manifest.md`
+
 ## Data and Git safety
 
 Large data files are intentionally ignored:

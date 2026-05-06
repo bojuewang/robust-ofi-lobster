@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "llm_usage_exists",
+      "status": "PASS",
+      "observed": "llm-usage.md",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "external_code_data_exists",
+      "status": "PASS",
+      "observed": "docs/EXTERNAL_CODE_AND_DATA.md",
+      "expected": "nonempty file"
+    },
+    {
+      "check": "readme_has_course_submission_artifacts",
+      "status": "PASS",
+      "observed": "section present",
+      "expected": "present"
+    },
+    {
+      "check": "readme_mentions_llm_usage",
+      "status": "PASS",
+      "observed": "llm-usage.md",
+      "expected": "mentioned"
+    },
+    {
+      "check": "readme_mentions_external_code_data",
+      "status": "PASS",
+      "observed": "docs/EXTERNAL_CODE_AND_DATA.md",
+      "expected": "mentioned"
+    },
+    {
+      "check": "llm_usage_contains_Tool_and_model",
+      "status": "PASS",
+      "observed": "Tool and model",
+      "expected": "present"
+    },
+    {
+      "check": "llm_usage_contains_Prompt_log",
+      "status": "PASS",
+      "observed": "Prompt log",
+      "expected": "present"
+    },
+    {
+      "check": "llm_usage_contains_Verification___testing_threshold",
+      "status": "PASS",
+      "observed": "Verification / testing threshold",
+      "expected": "present"
+    },
+    {
+      "check": "llm_usage_contains_Responsibility_statement",
+      "status": "PASS",
+      "observed": "Responsibility statement",
+      "expected": "present"
+    },
+    {
+      "check": "llm_usage_contains_Step_04b",
+      "status": "PASS",
+      "observed": "Step 04b",
+      "expected": "present"
+    },
+    {
+      "check": "llm_usage_contains_Step_05",
+      "status": "PASS",
+      "observed": "Step 05",
+      "expected": "present"
+    }
+  ]
+}
